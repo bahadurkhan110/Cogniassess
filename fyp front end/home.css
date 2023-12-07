@@ -1,0 +1,526 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #121212;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #D7EF43
+}
+
+.navbar-logo img {
+    margin-right: 10px;
+    width: auto;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    /* Adjust padding to align with your design */
+    display: inline-block;
+    border-radius: 8px;
+    /* Optional: if you want rounded corners */
+}
+
+/* Additional styles for navbar buttons */
+.nav-btn {
+    background-color: #D7EF43;
+    /* Green background */
+    color: black;
+    /* Text color */
+    font-weight: bold;
+    border: none;
+    /* No border */
+    padding: 5px 20px;
+    /* Padding inside the button */
+    margin-left: 10px;
+    /* Spacing between the links */
+    cursor: pointer;
+    /* Indicates the link is clickable */
+    text-decoration: none;
+    /* Removes underline from the text */
+    transition: background-color 0.3s;
+    /* Smooth background color transition for hover */
+}
+
+/* Hover effect for buttons */
+.nav-btn:hover {
+    background-color: #c5e16c;
+    /* Lighter green on hover */
+}
+
+/* hero and image section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #1a1a1a;
+}
+
+.hero-content {
+    max-width: 50%;
+    order: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.hero-image {
+    max-width: 50%;
+    /* Adjust the width as needed */
+    order: 2;
+    /* The image will be placed after the content by default */
+    margin-right: 20px;
+    text-align: center;
+    /* Center the text below the image */
+}
+
+.image-frame {
+    border: 2px solid #3b3b3b;
+    border-radius: 20px;
+    display: inline-block;
+    /* Aligns the frame as needed */
+}
+
+.hero-image img {
+    width: 100%;
+    /* image responsive */
+    height: auto;
+    border-bottom: none;
+    /* Removes the bottom border if there was one */
+    border-radius: 20px 20px 0 0;
+    /* Rounds only the top corners */
+    margin-bottom: 0;
+    /* Removes any margin below the image */
+}
+
+.image-caption {
+    color: #ffffff;
+    font-size: 18px;
+    background-color: #2B2B2B;
+    border-radius: 0 0 20px 20px;
+    text-align: left;
+    padding: 20px;
+    margin-top: -9px;
+    /* Aligns the caption closely with the image */
+}
+
+/* hero content section */
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+
+.hero button {
+    background-color: #D7EF43;
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* hero section - information  style */
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    /*  space between the button and the info section */
+}
+
+.info div {
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.info p {
+    color: #aaaaaa;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content,
+    .hero-image {
+        max-width: 100%;
+        order: unset;
+    }
+
+    .hero-image img {
+        width: auto;
+        /* Adjust image size on smaller screens */
+        margin: 0 auto;
+        /* Center the image */
+    }
+}
+
+
+/******* ROLES section  *******/
+
+.roles {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+}
+
+.roles h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #d7ef43;
+    text-align: left;
+}
+
+.roles p {
+    font-size: 22px;
+    color: white;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.role-card {
+    background: #3B3B3B;
+    border-radius: 15px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 13px;
+    padding: 20px;
+    width: 24%;
+    /* Adjust based on your layout */
+}
+
+.r-text {
+    text-align: center;
+    margin: auto;
+    width: 83%;
+}
+
+.role-icon img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    /* If icons are circular */
+}
+
+.role-title {
+    font-size: 1.5em;
+    /* Adjust as needed */
+    margin-top: 15px;
+}
+
+.role-description {
+    font-size: 0.9em;
+    /* Adjust as needed */
+    margin-top: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/******** Proctoring **********/
+
+.proctoring {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+}
+
+.proctoring h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #d7ef43;
+    text-align: left;
+}
+
+.proctoring p {
+    font-size: 22px;
+    color: white;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.proctor-card {
+    border-radius: 15px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 13px;
+    padding: 20px;
+    width: 24%;
+}
+
+.p-text {
+    text-align: center;
+    margin: auto;
+    width: 83%;
+}
+
+.proctor-icon img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.proctor-title {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+/******** Top Streaks *******/
+
+.streaks {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+}
+
+.streaks h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #d7ef43;
+    text-align: left;
+}
+
+.streaks p {
+    font-size: 22px;
+    color: white;
+    line-height: 1.4;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+}
+
+.streak-card {
+    background: #3B3B3B;
+    border-radius: 15px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 13px;
+    padding: 20px;
+    width: 16%;
+    height: auto;
+}
+
+.s-text {
+    text-align: left;
+    margin: auto;
+    width: 70%;
+}
+
+.streaks-icon img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    padding-top: 20px;
+}
+
+.streaks-title {
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+
+.streak-description {
+    font-size: 0.9em;
+    /* Adjust as needed */
+    margin-top: 10px;
+    width: 100%;
+    color: #858584;
+    max-width: 600px;
+}
+
+.join-us {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #FFFF00;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 0.6em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+
+}
+
+.join-us:hover {
+    background-color: #FFFF00;
+    color: #000000;
+}
+
+
+
+/********** update **********/
+
+.update-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.update-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.update-content {
+    max-width: 360px;
+    margin-left: 30px;
+}
+
+.update-content h1 {
+    color: #d7ef43;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.update-content p {
+    margin-bottom: 20px;
+}
+
+.subscription-form {
+    display: flex;
+    gap: 10px;
+}
+
+.subscription-form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    background-color: #d7ef43;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+    .update-section {
+        flex-direction: column;
+    }
+
+    .update-image img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .update-content {
+        text-align: center;
+    }
+}
+
+
+/********** Footer **********/
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0 10px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+}
+
+#footer-brand {
+    font-size: 24px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+#footer-brand {
+    flex-grow: 1;
+    color: #D7EF43
+}
+
+#footer-links {
+    flex-grow: 3;
+}
+
+#footer-socials {
+    flex-grow: 2;
+}
+
+.footer-link,
+.social-link {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#faq-link {
+    margin-left: 20px;
+}
+
+.social-link {
+    margin-right: 10px;
+}
+
+.footer-section img {
+    margin-right: 10px;
+    width: auto;
+}

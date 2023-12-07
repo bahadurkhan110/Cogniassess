@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #121212;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #D7EF43
+}
+
+.navbar-logo img {
+    margin-right: 10px;
+    width: auto;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    /* Adjust padding to align with your design */
+    display: inline-block;
+    border-radius: 8px;
+    /* Optional: if you want rounded corners */
+}
+
+/* Additional styles for navbar buttons */
+.nav-btn {
+    background-color: #D7EF43;
+    /* Green background */
+    color: black;
+    /* Text color */
+    font-weight: bold;
+    border: none;
+    /* No border */
+    padding: 5px 20px;
+    /* Padding inside the button */
+    margin-left: 10px;
+    /* Spacing between the links */
+    cursor: pointer;
+    /* Indicates the link is clickable */
+    text-decoration: none;
+    /* Removes underline from the text */
+    transition: background-color 0.3s;
+    /* Smooth background color transition for hover */
+}
+
+/* Hover effect for buttons */
+.nav-btn:hover {
+    background-color: #c5e16c;
+    /* Lighter green on hover */
+}
+
+
+/********** browser-domain-section *********/
+
+.domain {
+    background-color: #333;
+    padding: 20px;
+}
+
+.domain h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #d7ef43;
+    text-align: left;
+}
+
+.d-text {
+    text-align: center;
+    margin: auto;
+    width: 83%;
+}
+
+.domain p {
+    font-size: 22px;
+    color: white;
+    line-height: 1.4;
+    text-align: left;
+}
+
+/******* ROLES section  *******/
+
+.roles {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+}
+
+.roles h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #d7ef43;
+    text-align: left;
+}
+
+.roles p {
+    font-size: 22px;
+    color: white;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.role-card {
+    background: #3B3B3B;
+    border-radius: 15px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 13px;
+    padding: 20px;
+    width: 24%;
+    /* Adjust based on your layout */
+}
+
+.r-text {
+    text-align: center;
+    margin: auto;
+    width: 83%;
+}
+
+.role-icon img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    /* If icons are circular */
+}
+
+.role-title {
+    font-size: 1.5em;
+    /* Adjust as needed */
+    margin-top: 15px;
+}
+
+.role-description {
+    font-size: 0.9em;
+    /* Adjust as needed */
+    margin-top: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/********** Footer **********/
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0 10px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+}
+
+#footer-brand {
+    font-size: 24px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+#footer-brand {
+    flex-grow: 1;
+    color: #D7EF43
+}
+
+#footer-links {
+    flex-grow: 3;
+}
+
+#footer-socials {
+    flex-grow: 2;
+}
+
+.footer-link,
+.social-link {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#faq-link {
+    margin-left: 20px;
+}
+
+.social-link {
+    margin-right: 10px;
+}
+
+.footer-section img {
+    margin-right: 10px;
+    width: auto;
+}
